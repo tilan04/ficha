@@ -1,0 +1,4 @@
+Bundle-Name: ficha-web
+Bundle-SymbolicName: es.vass.ficha.web
+Bundle-Version: 1.0.0
+Export-Package: es.vass.ficha.constants

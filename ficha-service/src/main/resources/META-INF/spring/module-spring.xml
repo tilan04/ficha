@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<beans
+	default-destroy-method="destroy"
+	default-init-method="afterPropertiesSet"
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+	<bean class="es.vass.ficha.service.impl.JornadaLocalServiceImpl" id="es.vass.ficha.service.JornadaLocalService" />
+	<bean class="es.vass.ficha.service.persistence.impl.JornadaPersistenceImpl" id="es.vass.ficha.service.persistence.JornadaPersistence" parent="basePersistence" />
+	<bean class="es.vass.ficha.service.impl.tipoServicioLocalServiceImpl" id="es.vass.ficha.service.tipoServicioLocalService" />
+	<bean class="es.vass.ficha.service.persistence.impl.tipoServicioPersistenceImpl" id="es.vass.ficha.service.persistence.tipoServicioPersistence" parent="basePersistence" />
+</beans>

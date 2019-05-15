@@ -1,0 +1,10 @@
+Bundle-Name: ficha-api
+Bundle-SymbolicName: es.vass.ficha.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	es.vass.ficha.exception,\
+	es.vass.ficha.model,\
+	es.vass.ficha.service,\
+	es.vass.ficha.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../ficha-service/service.xml
